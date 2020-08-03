@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/bootstrap-social.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <h2 class="mt-5 mb-5">Welcome Orientation:</h2>
+    <div class="mt-5 mb-5 center">
+      <input
+        type="text"
+        id="nameText"
+        placeholder="Enter Name"
+        onfocus="this.value=null"
+      />
+      <input
+        type="text"
+        id="courseText"
+        placeholder="Enter Course"
+        onfocus="this.value=null"
+      />
+      <input
+        type="text"
+        id="idText"
+        placeholder="Enter ID No."
+        onfocus="this.value=null"
+      />
+    </div>
+    <div id="mainbuttons">
+      <button class="add" onclick="addFunction()">Add Member</button>
+      <button class="undo" onclick="undoEntry()">Undo Last Entry</button>
+      <button class="clearAll" onclick="deleteRows()">Clear List</button>
+    </div>
+    <p></p>
+    <table id="userTable">
+      <tr>
+        <th style="color: rgb(82, 166, 235);"><h2>Name</h2></th>
+        <th style="color: rgb(82, 166, 235);"><h2>Course</h2></th>
+        <th style="color: rgb(82, 166, 235);"><h2>ID Number</h2></th>
+      </tr>
+    </table>
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="jquery/dist/jquery.slim.min.js"></script>
+    <script src="popper.js/dist/umd/popper.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
